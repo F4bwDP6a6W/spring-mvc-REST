@@ -23,6 +23,8 @@
 		<beans:property name="annotatedClasses">
 			<beans:list>
 				<beans:value>com.spring.mvc.mini.model.Person</beans:value>
+				<beans:value>com.spring.mvc.mini.model.Student</beans:value>
+
 			</beans:list>
 		</beans:property>
 		<beans:property name="hibernateProperties">
@@ -40,6 +42,14 @@
 	<beans:bean id="personService" class="com.spring.mvc.mini.service.PersonServiceImpl">
 		<beans:property name="personDAO" ref="personDAO"></beans:property>
 	</beans:bean>
+
+	<beans:bean id="studentDAO" class="com.spring.mvc.mini.dao.StudentDAOImpl">
+		<beans:property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+	<beans:bean id="studentService" class="com.spring.mvc.mini.service.StudentServiceImpl">
+		<beans:property name="studentDAO" ref="studentDAO"></beans:property>
+	</beans:bean>
+
 	<context:component-scan base-package="com.spring.mvc.mini" />
 	
 	<tx:annotation-driven transaction-manager="transactionManager"/>

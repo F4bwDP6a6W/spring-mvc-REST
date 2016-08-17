@@ -13,28 +13,48 @@ USE test
 
 CREATE DATABASE test;
 
-CREATE TABLE pet (name VARCHAR(20), owner VARCHAR(20), species VARCHAR(20), sex CHAR(1), birth DATE, death DATE);
 
-
-CREATE TABLE `Person` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(20) NOT NULL DEFAULT '',
-  `country` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE `Students` (
+CREATE TABLE `Student` (
 `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-`FirstName` varchar(30) NOT NULL DEFAULT '',
-`LastName` varchar(30) NOT NULL DEFAULT '',
-`Gender` varchar(1) NOT NULL DEFAULT '',
-`BirthDay` DATE,
-`Gpa` decimal(4,3),
-`UscId` varchar(10) NOT NULL,
-`MentorId` int(11),
+`firstName` varchar(100) NOT NULL DEFAULT '',
+`lastName` varchar(100) NOT NULL DEFAULT '',
+`uscId` varchar(10),
+`birthday` DATE,
+`gender` char(1),
+`gpa` real(4,3),
+`mentorId` int(11),
+`department` varchar(255),
 PRIMARY KEY(`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
+INSERT INTO Student VALUES (NULL, 'Jerry', 'Zhang', '1234509876', STR_TO_DATE('22-01-1987', '%d-%m-%Y'),'M',3.62,NULL,'Computer Science');
 
+
+
+CREATE TABLE `Class` (
+`id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+`name` varchar(255) NOT NULL DEFAULT '',
+`section` char(1),
+`days` varchar(10),
+`beginTime` time,
+`endTime` time,
+PRIMARY KEY(`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+INSERT INTO Class VALUES (NULL, 'Algorithm', 'A', 'TTH', STR_TO_DATE('12-01-2100 08:00:00','%m-%d-%Y %H:%i:%s'),NULL);
+
+
+
+CREATE TABLE `ClassTaken` (
+`studentId` int(11) unsigned NOT NULL,
+`classId` int(11) unsigned NOT NULL,
+`grade` varchar(2),
+PRIMARY KEY(`studentId`,`classId`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO ClassTaken VALUES (1, 1, 'A+');
+
+
+drop table if exists Student;
 
