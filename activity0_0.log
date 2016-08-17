@@ -191,3 +191,5 @@ Caused by: java.lang.ClassNotFoundException: com.spring.mvc.mini.schedule.Schedu
 2016/08/16 17:24:46 [localhost-startStop-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 3001 ms
 2016/08/16 17:24:56 [http-bio-8080-exec-1] INFO  c.s.mvc.mini.xml.ObjectClassXMLPaser - Start to checkout
 2016/08/16 17:24:57 [http-bio-8080-exec-5] INFO  c.s.mvc.mini.xml.ObjectClassXMLPaser - Start to checkout
+2016/08/16 21:03:32 [localhost-startStop-2] INFO  o.s.w.c.s.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'appServlet-servlet': startup date [Tue Aug 16 17:24:43 PDT 2016]; parent: Root WebApplicationContext
+2016/08/16 21:03:32 [localhost-startStop-2] INFO  o.s.w.c.s.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Tue Aug 16 17:24:42 PDT 2016]; root of context hierarchy
