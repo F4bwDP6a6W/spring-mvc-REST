@@ -632,3 +632,209 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.security.web.cs
 2016/08/16 22:51:39 [http-bio-8080-exec-9] INFO  c.j.spring.dao.PersonDAOImpl - Person List::id=1, name=Jerry, country=China
 2016/08/16 22:52:47 [localhost-startStop-2] INFO  o.s.w.c.s.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'appServlet-servlet': startup date [Tue Aug 16 22:43:44 PDT 2016]; parent: Root WebApplicationContext
 2016/08/16 22:52:47 [localhost-startStop-2] INFO  o.s.w.c.s.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Tue Aug 16 22:43:43 PDT 2016]; root of context hierarchy
+2016/08/17 00:15:21 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2016/08/17 00:15:21 [localhost-startStop-1] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed Aug 17 00:15:21 PDT 2016]; root of context hierarchy
+2016/08/17 00:15:21 [localhost-startStop-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+2016/08/17 00:15:21 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 219 ms
+2016/08/17 00:15:21 [localhost-startStop-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
+2016/08/17 00:15:21 [localhost-startStop-1] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 17 00:15:21 PDT 2016]; parent: Root WebApplicationContext
+2016/08/17 00:15:21 [localhost-startStop-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+2016/08/17 00:15:21 [localhost-startStop-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/controllers.xml]
+2016/08/17 00:15:21 [localhost-startStop-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/jdbc_mysql.xml]
+2016/08/17 00:15:21 [localhost-startStop-1] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from URL [file:resources/application.properties]
+2016/08/17 00:15:21 [localhost-startStop-1] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.5.Final}
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  org.hibernate.validator.util.Version - Hibernate Validator 4.1.0.Final
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.h.v.e.r.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/person/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.PersonController.addPerson(com.spring.mvc.mini.model.Person)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/persons],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.PersonController.listPersons(org.springframework.ui.Model)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/remove/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.PersonController.removePerson(int)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/edit/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.PersonController.editPerson(int,org.springframework.ui.Model)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectClasses],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.ObjectClassesController.submit(org.springframework.ui.Model,java.lang.String,org.springframework.beans.support.PagedListHolder<java.util.ArrayList<com.spring.mvc.mini.pojo.ObjectClass>>,boolean,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectClasses],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.ObjectClassesController.enrichobjectClassesType(org.springframework.ui.Model,java.lang.String)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectClasses],methods=[GET],params=[jumppage],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.ObjectClassesController.handleObjectClassPagination(org.springframework.ui.Model,java.lang.String,org.springframework.beans.support.PagedListHolder<java.util.ArrayList<com.spring.mvc.mini.pojo.ObjectClass>>)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectClasses],methods=[GET],params=[searchcritical],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.ObjectClassesController.searchObjectClass(org.springframework.ui.Model,java.lang.String)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectclassform],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.spring.mvc.mini.web.ObjectClassFormController.handleObjectClassForm(org.springframework.ui.Model,com.spring.mvc.mini.pojo.UserInfo,java.lang.String)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectclassform],methods=[POST],params=[objclscount],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.spring.mvc.mini.web.ObjectClassFormController.handleObjectClassFormWithParam(com.spring.mvc.mini.pojo.ObjectClassesType,com.spring.mvc.mini.pojo.UserInfo,java.lang.String,java.lang.String,org.springframework.ui.Model)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectclassform],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.ObjectClassFormController.handleSubmit(com.spring.mvc.mini.pojo.ObjectClassesType,com.spring.mvc.mini.pojo.UserInfo,java.lang.String,boolean,org.springframework.ui.Model,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectclassxml],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.HttpEntity<[B> com.spring.mvc.mini.web.ObjectClassXmlController.getObjectClassesXml(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletResponse)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/requeststatus],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.RequestStatusController.submit(com.spring.mvc.mini.pojo.RequestStatus,boolean,org.springframework.ui.Model,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/requeststatus],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.spring.mvc.mini.web.RequestStatusController.handleObjectClassForm(org.springframework.ui.Model)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/requeststatus],methods=[GET],params=[mocrid],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.spring.mvc.mini.web.RequestStatusController.enrichObjectClassFormWithParam(java.lang.String,org.springframework.ui.Model)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/userinfoform],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.UserInfoFormController.submit(com.spring.mvc.mini.pojo.UserInfo,boolean,org.springframework.ui.Model,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/userinfoform],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.spring.mvc.mini.web.UserInfoFormController.userinfoForm()
+2016/08/17 00:15:22 [localhost-startStop-1] INFO  o.h.v.e.r.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2016/08/17 00:15:23 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 17 00:15:21 PDT 2016]; parent: Root WebApplicationContext
+2016/08/17 00:15:23 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 17 00:15:21 PDT 2016]; parent: Root WebApplicationContext
+2016/08/17 00:15:23 [localhost-startStop-1] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016/08/17 00:15:23 [localhost-startStop-1] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016/08/17 00:15:23 [localhost-startStop-1] INFO  o.s.o.h.HibernateTransactionManager - Using DataSource [org.apache.commons.dbcp.BasicDataSource@30a68352] of Hibernate SessionFactory for HibernateTransactionManager
+2016/08/17 00:15:23 [localhost-startStop-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 2081 ms
+2016/08/17 00:15:37 [http-bio-8080-exec-1] INFO  c.spring.mvc.mini.dao.PersonDAOImpl - Person loaded successfully, Person details=id=1, name=Jerry, country=China
+2016/08/17 00:15:37 [http-bio-8080-exec-1] INFO  c.spring.mvc.mini.dao.PersonDAOImpl - Person List::id=1, name=Jerry, country=China
+2016/08/17 00:15:46 [http-bio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/spring-mvc-test/Person] in DispatcherServlet with name 'appServlet'
+2016/08/17 00:15:49 [http-bio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/spring-mvc-test/Persons] in DispatcherServlet with name 'appServlet'
+2016/08/17 00:16:08 [http-bio-8080-exec-3] INFO  c.spring.mvc.mini.dao.PersonDAOImpl - Person loaded successfully, Person details=id=1, name=Jerry, country=China
+2016/08/17 00:16:08 [http-bio-8080-exec-3] INFO  c.spring.mvc.mini.dao.PersonDAOImpl - Person List::id=1, name=Jerry, country=China
+2016/08/17 00:16:42 [http-bio-8080-exec-3] INFO  c.spring.mvc.mini.dao.PersonDAOImpl - Person List::id=1, name=Jerry, country=China
+2016/08/17 00:18:04 [localhost-startStop-2] INFO  o.s.w.c.s.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 17 00:15:21 PDT 2016]; parent: Root WebApplicationContext
+2016/08/17 00:18:04 [localhost-startStop-2] INFO  o.s.w.c.s.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Wed Aug 17 00:15:21 PDT 2016]; root of context hierarchy
+2016/08/17 00:18:16 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2016/08/17 00:18:16 [localhost-startStop-1] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed Aug 17 00:18:16 PDT 2016]; root of context hierarchy
+2016/08/17 00:18:16 [localhost-startStop-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+2016/08/17 00:18:17 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 245 ms
+2016/08/17 00:18:17 [localhost-startStop-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
+2016/08/17 00:18:17 [localhost-startStop-1] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 17 00:18:17 PDT 2016]; parent: Root WebApplicationContext
+2016/08/17 00:18:17 [localhost-startStop-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+2016/08/17 00:18:17 [localhost-startStop-1] ERROR o.s.web.servlet.DispatcherServlet - Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'personController' for bean class [com.spring.mvc.mini.web.PersonController] conflicts with existing, non-compatible bean definition of same name and class [com.spring.mvc.mini.PersonController]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) ~[spring-web-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) ~[spring-web-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129) ~[spring-context-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537) ~[spring-context-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452) ~[spring-context-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663) ~[spring-webmvc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629) ~[spring-webmvc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677) ~[spring-webmvc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548) ~[spring-webmvc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489) ~[spring-webmvc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136) [spring-webmvc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262) [na:1.7.0_79]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_79]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_79]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_79]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'personController' for bean class [com.spring.mvc.mini.web.PersonController] conflicts with existing, non-compatible bean definition of same name and class [com.spring.mvc.mini.PersonController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:320) ~[spring-context-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:259) ~[spring-context-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:87) ~[spring-context-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:74) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1427) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1417) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:174) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:144) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:100) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:510) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	... 29 common frames omitted
+2016/08/17 00:18:17 [http-bio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
+2016/08/17 00:18:17 [http-bio-8080-exec-1] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 17 00:18:17 PDT 2016]; parent: Root WebApplicationContext
+2016/08/17 00:18:17 [http-bio-8080-exec-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+2016/08/17 00:18:17 [http-bio-8080-exec-1] ERROR o.s.web.servlet.DispatcherServlet - Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'personController' for bean class [com.spring.mvc.mini.web.PersonController] conflicts with existing, non-compatible bean definition of same name and class [com.spring.mvc.mini.PersonController]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) ~[spring-web-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) ~[spring-web-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129) ~[spring-context-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537) ~[spring-context-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452) ~[spring-context-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663) ~[spring-webmvc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629) ~[spring-webmvc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677) ~[spring-webmvc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548) ~[spring-webmvc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489) ~[spring-webmvc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136) [spring-webmvc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:865) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:136) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310) [tomcat-embed-core-7.0.47.jar:7.0.47]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_79]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_79]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_79]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'personController' for bean class [com.spring.mvc.mini.web.PersonController] conflicts with existing, non-compatible bean definition of same name and class [com.spring.mvc.mini.PersonController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:320) ~[spring-context-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:259) ~[spring-context-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:87) ~[spring-context-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:74) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1427) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1417) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:174) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:144) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:100) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:510) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392) ~[spring-beans-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	... 34 common frames omitted
+2016/08/17 00:18:52 [localhost-startStop-2] INFO  o.s.w.c.s.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Wed Aug 17 00:18:16 PDT 2016]; root of context hierarchy
+2016/08/17 00:19:08 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2016/08/17 00:19:08 [localhost-startStop-1] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed Aug 17 00:19:08 PDT 2016]; root of context hierarchy
+2016/08/17 00:19:08 [localhost-startStop-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+2016/08/17 00:19:08 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 241 ms
+2016/08/17 00:19:08 [localhost-startStop-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
+2016/08/17 00:19:08 [localhost-startStop-1] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 17 00:19:08 PDT 2016]; parent: Root WebApplicationContext
+2016/08/17 00:19:08 [localhost-startStop-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+2016/08/17 00:19:08 [localhost-startStop-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/controllers.xml]
+2016/08/17 00:19:08 [localhost-startStop-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/jdbc_mysql.xml]
+2016/08/17 00:19:09 [localhost-startStop-1] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from URL [file:resources/application.properties]
+2016/08/17 00:19:09 [localhost-startStop-1] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016/08/17 00:19:09 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016/08/17 00:19:09 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.5.Final}
+2016/08/17 00:19:09 [localhost-startStop-1] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2016/08/17 00:19:09 [localhost-startStop-1] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2016/08/17 00:19:09 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016/08/17 00:19:09 [localhost-startStop-1] INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016/08/17 00:19:09 [localhost-startStop-1] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2016/08/17 00:19:09 [localhost-startStop-1] INFO  org.hibernate.validator.util.Version - Hibernate Validator 4.1.0.Final
+2016/08/17 00:19:09 [localhost-startStop-1] INFO  o.h.v.e.r.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectClasses],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.ObjectClassesController.submit(org.springframework.ui.Model,java.lang.String,org.springframework.beans.support.PagedListHolder<java.util.ArrayList<com.spring.mvc.mini.pojo.ObjectClass>>,boolean,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectClasses],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.ObjectClassesController.enrichobjectClassesType(org.springframework.ui.Model,java.lang.String)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectClasses],methods=[GET],params=[jumppage],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.ObjectClassesController.handleObjectClassPagination(org.springframework.ui.Model,java.lang.String,org.springframework.beans.support.PagedListHolder<java.util.ArrayList<com.spring.mvc.mini.pojo.ObjectClass>>)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectClasses],methods=[GET],params=[searchcritical],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.ObjectClassesController.searchObjectClass(org.springframework.ui.Model,java.lang.String)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectclassform],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.spring.mvc.mini.web.ObjectClassFormController.handleObjectClassForm(org.springframework.ui.Model,com.spring.mvc.mini.pojo.UserInfo,java.lang.String)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectclassform],methods=[POST],params=[objclscount],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.spring.mvc.mini.web.ObjectClassFormController.handleObjectClassFormWithParam(com.spring.mvc.mini.pojo.ObjectClassesType,com.spring.mvc.mini.pojo.UserInfo,java.lang.String,java.lang.String,org.springframework.ui.Model)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectclassform],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.ObjectClassFormController.handleSubmit(com.spring.mvc.mini.pojo.ObjectClassesType,com.spring.mvc.mini.pojo.UserInfo,java.lang.String,boolean,org.springframework.ui.Model,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/objectclassxml],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.HttpEntity<[B> com.spring.mvc.mini.web.ObjectClassXmlController.getObjectClassesXml(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletResponse)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/person/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.PersonController.addPerson(com.spring.mvc.mini.model.Person)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/persons],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.PersonController.listPersons(org.springframework.ui.Model)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/remove/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.PersonController.removePerson(int)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/edit/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.PersonController.editPerson(int,org.springframework.ui.Model)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/requeststatus],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.RequestStatusController.submit(com.spring.mvc.mini.pojo.RequestStatus,boolean,org.springframework.ui.Model,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/requeststatus],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.spring.mvc.mini.web.RequestStatusController.handleObjectClassForm(org.springframework.ui.Model)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/requeststatus],methods=[GET],params=[mocrid],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.spring.mvc.mini.web.RequestStatusController.enrichObjectClassFormWithParam(java.lang.String,org.springframework.ui.Model)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/userinfoform],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.mvc.mini.web.UserInfoFormController.submit(com.spring.mvc.mini.pojo.UserInfo,boolean,org.springframework.ui.Model,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/userinfoform],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.spring.mvc.mini.web.UserInfoFormController.userinfoForm()
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.h.v.e.r.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 17 00:19:08 PDT 2016]; parent: Root WebApplicationContext
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 17 00:19:08 PDT 2016]; parent: Root WebApplicationContext
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.o.h.HibernateTransactionManager - Using DataSource [org.apache.commons.dbcp.BasicDataSource@2257a613] of Hibernate SessionFactory for HibernateTransactionManager
+2016/08/17 00:19:10 [localhost-startStop-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 2218 ms
+2016/08/17 00:19:11 [http-bio-8080-exec-1] INFO  c.spring.mvc.mini.dao.PersonDAOImpl - Person List::id=1, name=Jerry, country=China
+2016/08/17 00:21:33 [localhost-startStop-2] INFO  o.s.w.c.s.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 17 00:19:08 PDT 2016]; parent: Root WebApplicationContext
+2016/08/17 00:21:33 [localhost-startStop-2] INFO  o.s.w.c.s.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Wed Aug 17 00:19:08 PDT 2016]; root of context hierarchy

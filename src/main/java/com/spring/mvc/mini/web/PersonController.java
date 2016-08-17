@@ -1,7 +1,7 @@
-package com.journaldev.spring;
+package com.spring.mvc.mini.web;
 
-import com.journaldev.spring.model.Person;
-import com.journaldev.spring.service.PersonService;
+import com.spring.mvc.mini.model.Person;
+import com.spring.mvc.mini.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;

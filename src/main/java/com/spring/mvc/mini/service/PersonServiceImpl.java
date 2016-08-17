@@ -1,7 +1,7 @@
-package com.journaldev.spring.service;
+package com.spring.mvc.mini.service;
 
-import com.journaldev.spring.dao.PersonDAO;
-import com.journaldev.spring.model.Person;
+import com.spring.mvc.mini.dao.PersonDAO;
+import com.spring.mvc.mini.model.Person;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

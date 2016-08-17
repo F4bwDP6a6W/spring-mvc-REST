@@ -1,0 +1,40 @@
+2016-08-17T02:52:56.739121Z 1 [Note] A temporary password is generated for root@localhost: /#ZFk9fwvpsr
+
+If you lose this password, please consult the section How to Reset the Root Password in the MySQL reference manual.
+
+mysql -u root -p
+/#ZFk9fwvpsr
+
+ALTER USER `root`@`localhost` IDENTIFIED BY `Nokia123`;
+SELECT VERSION(), CURRENT_DATE;
+
+SHOW DATABASES;
+USE test
+
+CREATE DATABASE test;
+
+CREATE TABLE pet (name VARCHAR(20), owner VARCHAR(20), species VARCHAR(20), sex CHAR(1), birth DATE, death DATE);
+
+
+CREATE TABLE `Person` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL DEFAULT '',
+  `country` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `Students` (
+`id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+`FirstName` varchar(30) NOT NULL DEFAULT '',
+`LastName` varchar(30) NOT NULL DEFAULT '',
+`Gender` varchar(1) NOT NULL DEFAULT '',
+`BirthDay` DATE,
+`Gpa` decimal(4,3),
+`UscId` varchar(10) NOT NULL,
+`MentorId` int(11),
+PRIMARY KEY(`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+

@@ -1,6 +1,6 @@
-package com.journaldev.spring.dao;
+package com.spring.mvc.mini.dao;
 
-import com.journaldev.spring.model.Person;
+import com.spring.mvc.mini.model.Person;
 
 import java.util.List;
 

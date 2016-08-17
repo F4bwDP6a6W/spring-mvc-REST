@@ -1,6 +1,6 @@
-package com.journaldev.spring.dao;
+package com.spring.mvc.mini.dao;
 
-import com.journaldev.spring.model.Person;
+import com.spring.mvc.mini.model.Person;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.slf4j.Logger;
@@ -12,7 +12,7 @@ import java.util.List;
 @Repository
 public class PersonDAOImpl implements PersonDAO {
 	
-	private static final Logger logger = LoggerFactory.getLogger(com.journaldev.spring.dao.PersonDAOImpl.class);
+	private static final Logger logger = LoggerFactory.getLogger(com.spring.mvc.mini.dao.PersonDAOImpl.class);
 
 	private SessionFactory sessionFactory;
 	

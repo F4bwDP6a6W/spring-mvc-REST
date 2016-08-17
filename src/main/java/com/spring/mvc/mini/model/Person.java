@@ -1,4 +1,4 @@
-package com.journaldev.spring.model;
+package com.spring.mvc.mini.model;
 
 import javax.persistence.*;
 

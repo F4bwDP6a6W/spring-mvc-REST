@@ -1,6 +1,6 @@
-package com.journaldev.spring.service;
+package com.spring.mvc.mini.service;
 
-import com.journaldev.spring.model.Person;
+import com.spring.mvc.mini.model.Person;
 
 import java.util.List;
 
