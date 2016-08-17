@@ -1,6 +1,0 @@
-0:0:0:0:0:0:0:1 - - [16/Aug/2016:22:39:23 -0700] "GET /spring-mvc-test/persons HTTP/1.1" 500 17691 http-bio-8080-exec-1 126
-0:0:0:0:0:0:0:1 - - [16/Aug/2016:22:43:46 -0700] "GET /spring-mvc-test/persons HTTP/1.1" 500 13191 http-bio-8080-exec-1 270
-0:0:0:0:0:0:0:1 - - [16/Aug/2016:22:45:00 -0700] "GET /spring-mvc-test/persons HTTP/1.1" 200 1280 http-bio-8080-exec-4 1335
-0:0:0:0:0:0:0:1 - - [16/Aug/2016:22:45:13 -0700] "POST /spring-mvc-test/person/add HTTP/1.1" 302 - http-bio-8080-exec-6 43
-0:0:0:0:0:0:0:1 - - [16/Aug/2016:22:45:13 -0700] "GET /spring-mvc-test/persons HTTP/1.1" 200 1670 http-bio-8080-exec-7 17
-0:0:0:0:0:0:0:1 - - [16/Aug/2016:22:51:39 -0700] "GET /spring-mvc-test/edit/1 HTTP/1.1" 200 1921 http-bio-8080-exec-9 32
