@@ -26,5 +26,5 @@
 	</beans:bean>
 
 	<beans:import resource="controllers.xml" />
-
+	<beans:import resource="jdbc_mysql.xml" />
 </beans:beans>

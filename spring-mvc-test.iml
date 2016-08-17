@@ -54,14 +54,6 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:4.0.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:4.0.0.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.tmatesoft.svnkit:svnkit:1.7.8" level="project" />
-    <orderEntry type="library" name="Maven: org.tmatesoft.sqljet:sqljet:1.1.6" level="project" />
-    <orderEntry type="library" name="Maven: org.antlr:antlr-runtime:3.4" level="project" />
-    <orderEntry type="library" name="Maven: de.regnis.q.sequence:sequence-library:1.0.2" level="project" />
-    <orderEntry type="library" name="Maven: net.java.dev.jna:jna:3.4.0" level="project" />
-    <orderEntry type="library" name="Maven: com.trilead:trilead-ssh2:1.0.0-build215" level="project" />
-    <orderEntry type="library" name="Maven: javax.mail:mail:1.4" level="project" />
-    <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
     <orderEntry type="library" name="Maven: org.jasypt:jasypt:1.9.2" level="project" />
     <orderEntry type="library" name="Maven: cglib:cglib:2.2.2" level="project" />
     <orderEntry type="library" name="Maven: asm:asm:3.3.1" level="project" />

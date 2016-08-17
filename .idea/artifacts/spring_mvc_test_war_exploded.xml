@@ -30,14 +30,6 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:4.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:4.0.0.RELEASE" />
-          <element id="library" level="project" name="Maven: org.tmatesoft.svnkit:svnkit:1.7.8" />
-          <element id="library" level="project" name="Maven: org.tmatesoft.sqljet:sqljet:1.1.6" />
-          <element id="library" level="project" name="Maven: org.antlr:antlr-runtime:3.4" />
-          <element id="library" level="project" name="Maven: de.regnis.q.sequence:sequence-library:1.0.2" />
-          <element id="library" level="project" name="Maven: net.java.dev.jna:jna:3.4.0" />
-          <element id="library" level="project" name="Maven: com.trilead:trilead-ssh2:1.0.0-build215" />
-          <element id="library" level="project" name="Maven: javax.mail:mail:1.4" />
-          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
           <element id="library" level="project" name="Maven: org.jasypt:jasypt:1.9.2" />
           <element id="library" level="project" name="Maven: cglib:cglib:2.2.2" />
           <element id="library" level="project" name="Maven: asm:asm:3.3.1" />
