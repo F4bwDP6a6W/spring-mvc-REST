@@ -11,7 +11,7 @@ spring-mvc-REST 是一个完整的，轻量、简单的Java RESTful 项目，基
 第二步直接运行
 在命令行界面输入:
 
-    $ cd spring-mvc-test
+    $ cd spring-mvc-REST
     $ mvn tomcat7:run [-Dmaven.tomcat.port=<port no.>] (In case 8080 is busy] 
 
 通过浏览器打开：http://localhost:8080/spring-mvc-REST/students
