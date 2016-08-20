@@ -16,6 +16,8 @@ spring-mvc-REST 是一个完整的，轻量、简单的Java RESTful 项目，基
 
 通过浏览器打开：http://localhost:8080/spring-mvc-REST/students
 
+第三步:
+下载一个 REST Client来模拟请求, 具体的URL和Payload参看json文件。
 
 如果你想要学习或贡献和这个项目：
 下载IDEA Intellij,然后选择import project, 选择import一个maven项目即可。
