@@ -1,18 +1,30 @@
-2016-08-17T02:52:56.739121Z 1 [Note] A temporary password is generated for root@localhost: /#ZFk9fwvpsr
+Step 1
+Install MySQL, please record the random password given by the last step of Mysql installation:
+"[Note] A temporary password is generated for root@localhost: pQAsm.fwQ4.1"
 
-If you lose this password, please consult the section How to Reset the Root Password in the MySQL reference manual.
+Step 2
+Adding mysql commands into path, so you can run mysql command in Terminal(Mac OS X):
+export PATH=${PATH}:/usr/local/mysql/bin/
 
+Step 3
+Open Terminal and run following command and give the random password:
 mysql -u root -p
-/#ZFk9fwvpsr
 
-ALTER USER `root`@`localhost` IDENTIFIED BY `Nokia123`;
-SELECT VERSION(), CURRENT_DATE;
+Step 4
+Change password to 'Nokia123' by running:
+SET PASSWORD = PASSWORD('Nokia123');
 
-SHOW DATABASES;
-USE test
-
+Step 5
+Create a database called 'test':
 CREATE DATABASE test;
+USE test;
 
+Step 6
+Check all databases exist:
+SHOW DATABASES;
+
+Step 7
+Create tables:
 
 CREATE TABLE `Student` (
 `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
@@ -28,6 +40,7 @@ PRIMARY KEY(`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 INSERT INTO Student VALUES (NULL, 'Jerry', 'Zhang', '1234509876', STR_TO_DATE('22-01-1987', '%d-%m-%Y'),'M',3.62,NULL,'Computer Science');
+
 
 
 

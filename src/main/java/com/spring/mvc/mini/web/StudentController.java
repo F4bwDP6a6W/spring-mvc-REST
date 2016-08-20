@@ -1,5 +1,6 @@
 package com.spring.mvc.mini.web;
 
+import com.spring.mvc.mini.model.ClassTaken;
 import com.spring.mvc.mini.model.Student;
 import com.spring.mvc.mini.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -65,12 +66,11 @@ public class StudentController {
         studentService.removeStudent(id);
         return "removed";
     }
- 
-    @RequestMapping("/student/edit/{id}")
-    public String editStudent(@PathVariable("id") int id, Model model){
-        model.addAttribute("student", studentService.getStudentById(id));
-        model.addAttribute("listStudents", studentService.listStudents());
-        return "student";
-    }
-	
+
+	@RequestMapping(value= "/class", method = RequestMethod.POST)
+	public @ResponseBody String enroll(@RequestBody ClassTaken jsonString) {
+
+		return "";
+	}
+
 }
