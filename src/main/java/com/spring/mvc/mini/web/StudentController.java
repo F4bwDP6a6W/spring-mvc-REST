@@ -48,6 +48,32 @@ public class StudentController {
 	@RequestMapping(value= "/student/{studentId}", method = RequestMethod.PUT)
 	public @ResponseBody String update(@PathVariable() Integer studentId, @RequestBody Student jsonString) {
 		Student s = studentService.getStudentById(studentId);
+		if(jsonString.getBirthday() == null ||
+		jsonString.getDepartment() == null ||
+		jsonString.getFirstName() == null ||
+		jsonString.getGender() == null ||
+		jsonString.getGpa() == null ||
+		jsonString.getLastName() == null ||
+		jsonString.getMentorId() == null ||
+		jsonString.getUscId() == null)
+			return "failed, full student coloums required";
+
+		s.setBirthday(jsonString.getBirthday());
+		s.setDepartment(jsonString.getDepartment());
+		s.setFirstName(jsonString.getFirstName());
+		s.setGender(jsonString.getGender());
+		s.setGpa (jsonString.getGpa());
+		s.setLastName(jsonString.getLastName());
+		s.setMentorId(jsonString.getMentorId());
+		s.setUscId(jsonString.getUscId());
+
+		studentService.updateStudent(s);
+		return "updated";
+	}
+
+	@RequestMapping(value= "/student/{studentId}", method = RequestMethod.PATCH)
+	public @ResponseBody String patch(@PathVariable() Integer studentId, @RequestBody Student jsonString) {
+		Student s = studentService.getStudentById(studentId);
 		if(jsonString.getBirthday() != null) s.setBirthday(jsonString.getBirthday());
 		if(jsonString.getDepartment() != null) s.setDepartment(jsonString.getDepartment());
 		if(jsonString.getFirstName() != null) s.setFirstName(jsonString.getFirstName());

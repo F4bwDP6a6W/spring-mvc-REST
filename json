@@ -6,5 +6,4 @@ http://localhost:8080/spring-mvc-test/student/add
 "gender":"M","birthday":538300800000,"uscId":"1234509876",
 "gpa":3.62,"mentorId":null,"department":"Computer Science"}
 
-{"id":2
-"gpa":3.62,"mentorId":null,"department":"Computer Science"}
+{"gpa":3.62}
